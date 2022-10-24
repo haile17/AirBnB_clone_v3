@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """app.py to connect to API"""
-import storage from models
-import app_views from api.v1.views
+
+from api.v1.views import app_views
 from flask import Flask
 from flask import Blueprint
-
+from models import storage
 
 app = Flask('app')
 
